@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bubble</title>
+	<link rel="stylesheet" href="bubble.css">
+</head>
+<body>
+	<div class="container">
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+		<div class="circle circle_one"></div>
+		<div class="circle circle_two"></div>
+	</div>
+	<svg>
+		<filter id="gooey">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+			<feColorMatrix values="
+			1 0 0 0 0
+			0 1 0 0 0
+			0 0 1 0 0
+			0 0 0 20 -10
+			"/>
+		</filter>
+	</svg>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="bubble.js"></script>
+</body>
+</html>
